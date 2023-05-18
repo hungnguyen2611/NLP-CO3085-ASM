@@ -1,0 +1,27 @@
+Relation:
+nmod(Máy_bay, VJ5)
+nsubj(bay, Máy_bay)
+root(<ROOT>, bay)
+from_loc(TP., từ)
+name(TP., Hà_Nội)
+to_loc(Khánh_Hòa, đến)
+name_loc(bay, Khánh_Hòa)
+query_time(bay, mấy_giờ)
+query(bay, ?)
+
+Grammatical Relation:
+FLIGHT(NAME(v1 "VJ5"))
+WH_TIME_COUNT ?(t1)
+SOURCE(NAME(h1 "Hà_Nội"))
+DEST(NAME(k1 "Khánh_Hòa"))
+
+Logical Form:
+WH_TIME_COUNT ?(t1)
+&(FLIGHT(NAME(v1 "VJ5")))(SOURCE(NAME(h1 "Hà_Nội")))(DEST(NAME(k1 "Khánh_Hòa")))
+
+Procedural Semantic:
+PRINT-ALL ?t1    
+RUNTIME  VJ5 HN KH ?t1
+
+Output:
+Dạ thưa, kết quả câu hỏi là: 0:45

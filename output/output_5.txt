@@ -1,0 +1,23 @@
+Relation:
+nmod(Máy_bay, VN4)
+nsubj(xuất_phát, Máy_bay)
+root(<ROOT>, xuất_phát)
+from_loc(Đà_Nẵng, từ)
+name_loc(xuất_phát, Đà_Nẵng)
+query(xuất_phát, ?)
+
+Grammatical Relation:
+FLIGHT(NAME(v1 "VN4"))
+SOURCE(NAME(đ1 "Đà_Nẵng"))
+YES_NO(NONE)
+
+Logical Form:
+YES NO ?(None)
+&(FLIGHT(NAME(v1 "VN4")))(SOURCE(NAME(đ1 "Đà_Nẵng")))
+
+Procedural Semantic:
+PRINT-YES-NO     
+DTIME  VN4 ĐN  ?t1
+
+Output:
+Không

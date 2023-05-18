@@ -1,0 +1,29 @@
+Relation:
+nmod(Máy_bay, hãng_hàng_không)
+name(Máy_bay, VietJetAir)
+nsubj(bay, Máy_bay)
+root(<ROOT>, bay)
+to_loc(thành_phố, đến)
+WH_det(thành_phố, nào)
+query(bay, ?)
+
+Grammatical Relation:
+TO_LOC(NOUN(t1 "thành_phố"))
+WH_DEST ?(d1)
+FLIGHT(NAME(v1 "VietJetAir"))
+
+Logical Form:
+WH_DEST ?(d1)
+FLIGHT(NAME(v1 "VietJetAir"))
+
+Procedural Semantic:
+PRINT-ALL ?d1    
+ATIME ?d1 VJ   ?t1
+
+Output:
+Dạ thưa, kết quả câu hỏi là:thành phố HUE
+thành phố HN
+thành phố HP
+thành phố ĐN
+thành phố KH
+

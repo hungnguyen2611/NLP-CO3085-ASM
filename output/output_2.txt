@@ -1,0 +1,24 @@
+Relation:
+WH_det(mã_hiệu, cho_biết)
+nmod(mã_hiệu, Máy_bay)
+nsubj(hạ_cánh, mã_hiệu)
+root(<ROOT>, hạ_cánh)
+in_loc(Huế, ở)
+name_loc(hạ_cánh, Huế)
+query(hạ_cánh, ?)
+
+Grammatical Relation:
+WH_FLIGHT ?(f1)
+FLIGHT(NOUN(m1 "Máy_bay"))
+DEST(NAME(h1 "Huế"))
+
+Logical Form:
+WH_FLIGHT ?(f1)
+&(DEST(NAME(h1 "Huế")))
+
+Procedural Semantic:
+PRINT-ALL ?f1    
+&(FLIGHT ?f1    )(ATIME ?f1   HUE ?t1)
+
+Output:
+Dạ thưa, kết quả câu hỏi là: máy bay VN1,VJ1

@@ -1,0 +1,25 @@
+Relation:
+WH_det(Máy_bay, nào)
+nsubj(bay, Máy_bay)
+root(<ROOT>, bay)
+from_loc(Hải_Phòng, từ)
+name_loc(bay, Hải_Phòng)
+to_loc(Khánh_Hòa, đến)
+name_loc(bay, Khánh_Hòa)
+query(bay, ?)
+
+Grammatical Relation:
+WH_FLIGHT ?(f1)
+SOURCE(NAME(h1 "Hải_Phòng"))
+DEST(NAME(k1 "Khánh_Hòa"))
+
+Logical Form:
+WH_FLIGHT ?(f1)
+&(SOURCE(NAME(h1 "Hải_Phòng")))(DEST(NAME(k1 "Khánh_Hòa")))
+
+Procedural Semantic:
+PRINT-ALL ?f1    
+&(FLIGHT ?f1    )(RUNTIME ?f1  HP KH ?t1)
+
+Output:
+Dạ thưa, không tìm thấy kết quả phù hợp

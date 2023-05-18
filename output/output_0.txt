@@ -1,0 +1,25 @@
+Relation:
+WH_det(Máy_bay, nào)
+nsubj(đến, Máy_bay)
+root(<ROOT>, đến)
+to_loc(đến, thành_phố)
+name(thành_phố, Huế)
+time(lúc, 13:30HR)
+
+Grammatical Relation:
+WH_FLIGHT ?(f1)
+DEST_FLIGHT ?(f1)
+AT_TIME(NAME(11 "13:30HR"))
+TO_LOC(NAME(h1 "Huế"))
+
+Logical Form:
+WH_FLIGHT ?(f1)
+DEST_FLIGHT ?(f1)(TO_LOC(NAME(h1 "Huế")))
+AT_TIME(NAME(11 "13:30HR"))
+
+Procedural Semantic:
+PRINT-ALL ?f1    
+&(FLIGHT ?f1    )(ATIME ?f1   HUE 13:30)
+
+Output:
+Dạ thưa, kết quả câu hỏi là: máy bay VJ1

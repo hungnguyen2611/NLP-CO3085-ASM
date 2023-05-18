@@ -1,0 +1,25 @@
+Relation:
+WH_det(Máy_bay, nào)
+nsubj(bay, Máy_bay)
+root(<ROOT>, bay)
+from_loc(TP.Hồ_Chí_Minh, từ)
+name_loc(bay, TP.Hồ_Chí_Minh)
+to_loc(Hà_Nội, đến)
+name_loc(bay, Hà_Nội)
+query(bay, ?)
+
+Grammatical Relation:
+WH_FLIGHT ?(f1)
+SOURCE(NAME(t1 "TP.Hồ_Chí_Minh"))
+DEST(NAME(h1 "Hà_Nội"))
+
+Logical Form:
+WH_FLIGHT ?(f1)
+&(SOURCE(NAME(t1 "TP.Hồ_Chí_Minh")))(DEST(NAME(h1 "Hà_Nội")))
+
+Procedural Semantic:
+PRINT-ALL ?f1    
+&(FLIGHT ?f1    )(RUNTIME ?f1  HCMC HN ?t1)
+
+Output:
+Dạ thưa, kết quả câu hỏi là: máy bay VN3

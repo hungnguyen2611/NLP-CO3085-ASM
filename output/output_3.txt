@@ -1,0 +1,31 @@
+Relation:
+WH_det(Máy_bay, nào)
+nsubj(xuất_phát, Máy_bay)
+root(<ROOT>, xuất_phát)
+from_loc(Tp._Hồ_Chí_Minh, từ)
+name_loc(xuất_phát, Tp._Hồ_Chí_Minh)
+at_time(xuất_phát, lúc)
+time(lúc, mấy_giờ)
+query_time(xuất_phát, mấy_giờ)
+query(xuất_phát, ?)
+
+Grammatical Relation:
+WH_FLIGHT ?(f1)
+WH_TIME ?(t1)
+SOURCE(NAME(t1 "Tp._Hồ_Chí_Minh"))
+
+Logical Form:
+WH_FLIGHT ?(f1) WH_DTIME(t1)
+&(SOURCE(NAME(t1 "Tp._Hồ_Chí_Minh")))
+
+Procedural Semantic:
+PRINT-ALL ?f1 ?t1    
+&(FLIGHT ?f1    )(DTIME ?f1  HCMC  ?t1)
+
+Output:
+Dạ thưa, kết quả câu hỏi là:máy bay VN1, thời gian 10:00
+máy bay VN3, thời gian 4:30
+máy bay VN5, thời gian 17:00
+máy bay VJ3, thời gian 9:45
+máy bay VJ4, thời gian 8:30
+

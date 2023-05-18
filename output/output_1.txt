@@ -1,0 +1,28 @@
+Relation:
+WH_det(Máy_bay, nào)
+nsubj(bay, Máy_bay)
+root(<ROOT>, bay)
+from_loc(Đà_Nẵng, từ)
+name_loc(bay, Đà_Nẵng)
+to_loc(TP., đến)
+name(TP., Hồ_Chí_Minh)
+run_time(bay, 1_giờ)
+query(bay, ?)
+
+Grammatical Relation:
+WH_FLIGHT ?(f1)
+RUN_TIME(NAME(11 "1_giờ"))
+SOURCE(NAME(đ1 "Đà_Nẵng"))
+DEST(NAME(h1 "Hồ_Chí_Minh"))
+
+Logical Form:
+WH_FLIGHT ?(f1)
+&(SOURCE(NAME(đ1 "Đà_Nẵng")))(DEST(NAME(h1 "Hồ_Chí_Minh")))
+RUN_TIME(NAME(11 "1_giờ"))
+
+Procedural Semantic:
+PRINT-ALL ?f1    
+&(FLIGHT ?f1    )(RUNTIME ?f1  ĐN HCMC 1:00)
+
+Output:
+Dạ thưa, kết quả câu hỏi là: máy bay VN2
