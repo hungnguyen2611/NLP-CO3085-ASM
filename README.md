@@ -2,16 +2,9 @@
 
 ## Table of contents
 - [Table of contents](#table-of-contents)
-- [PERSONAL INFORMATION](#personal-information)
 - [Notes](#notes)
   - [Setup](#setup)
   - [Structure](#Structure)
-
-
-## PERSONAL INFORMATION
-- **Name**: Nguyễn Minh Hùng
-- **Student ID**: 1952737
-- **Mail**: hung.nguyenantslayer@hcmut.edu.vn
 
 ## Notes
 ### Setup
